@@ -1,0 +1,96 @@
+//////////////////////////////
+// LOGO
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem;
+}
+
+
+/////////////////////////////
+// SEARCH
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    width: 90%;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-1);
+    color: inherit;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-2);
+
+      &::-webkit-input-placeholder {
+        font-weight: 100;
+        color: var(--color-grey-light-4);
+      }
+
+      & + .search__button {
+        background-color: var(--color-grey-light-2);
+      }
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-1);
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+
+/////////////////////////////
+// USER NAVIGATION
+.user-nav {
+  display: flex;
+  &__icon-box {
+
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  &__notification {
+
+  }
+
+  &__user {
+
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+
+  &__user-name {
+
+  }
+}
